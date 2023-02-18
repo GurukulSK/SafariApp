@@ -14,17 +14,7 @@ export const environment = {
     messagingSenderId: '771133664732',
     measurementId: 'G-7VV9LHG5J9',
   },
-  production: false,
-  firebaseConfig : {
-    apiKey: "AIzaSyDSFM30lvAkgN5-AKVyRkBCEMcsOPu-MD8",
-    authDomain: "safariapp-70d71.firebaseapp.com",
-    databaseURL: "https://safariapp-70d71-default-rtdb.firebaseio.com",
-    projectId: "safariapp-70d71",
-    storageBucket: "safariapp-70d71.appspot.com",
-    messagingSenderId: "771133664732",
-    appId: "1:771133664732:web:bd44d743798dc402ddf319",
-    measurementId: "G-7VV9LHG5J9"
-  };
+  production: false
 };
 
 /*

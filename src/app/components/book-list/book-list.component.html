@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Book Title</th>
+        <th scope="col">Book Url</th>
+        <!-- <th scope="col">Book Img Url</th> -->
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of safari; let f=index">
+        <th scope="row">{{f}}</th>
+        <td>{{i.title}}}</td>
+        <td>{{i.url}}}</td>
+        <!-- <td>{{i.img_url}}</td> -->
+        <td><button class="btn btn-primary">Edit</button>  <button class="btn btn-danger">Delete</button></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
