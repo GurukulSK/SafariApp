@@ -19,6 +19,7 @@ import { AddsafariComponent } from './components/addsafari/addsafari.component';
 import { BookListComponent } from './components/book-list/book-list.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 @NgModule({
+  
   declarations: [
     AppComponent,
     LoginComponent,

@@ -7,16 +7,17 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
-  {path:"",redirectTo:'dashboard',pathMatch:'full'},
-  {path:"login",component:LoginComponent},
-  {path:"dashboard",component:DashboardComponent},
-  {path:'register',component:RegisterComponent},
-  {path:'addbook',component:AddsafariComponent},
-  {path:'booklist',component:BookListComponent},
+  { path: "**", component:DashboardComponent },
+  { path: "login", component: LoginComponent },
+  { path: "dashboard", component: DashboardComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'addbook', component: AddsafariComponent },
+  { path: 'booklist', component: BookListComponent },
 ];
 
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
+   imports:   [RouterModule.forRoot(routes, { enableTracing: false, useHash: true })],
+    exports: [RouterModule] 
+  })
 export class AppRoutingModule { }
